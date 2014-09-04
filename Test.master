@@ -1,0 +1,15 @@
+﻿<%@ Master Language="C#" Inherits="AutoTaskManager.Test" %>
+<!DOCTYPE html>
+<html>
+<head runat="server">
+	<title>Test</title>
+</head>
+<body>
+<div id="container">
+<form runat="server">
+    <asp:contentplaceholder id="contentPlaceHolder" runat="server" /> 
+</form>
+</div>
+</body>
+</html>
+
