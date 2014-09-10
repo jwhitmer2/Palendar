@@ -1,4 +1,7 @@
-﻿using System;
+﻿#if MYCALENDAR
+#else
+#define MYCALENDAR
+using System;
 using System.Collections;
 using System.ComponentModel;
 using System.Data;
@@ -9,15 +12,18 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Web.UI.HtmlControls;
 
-namespace AutoTaskManager
-{
+namespace AutoTaskManager {
 
-	public partial class MyCalendar : System.Web.UI.Page {
-		//protected System.Web.UI.WebControls.Calendar myCalendar;
-		//protected System.Web.UI.WebControls.Label lblDates;
-		
-		private void Page_Load(object sender, System.EventArgs e)
-		{
+	public partial class MyCalendar : Page {
+
+		// Define the variables that will be accessed from HTML:
+		protected string testtext = "bacon";
+
+		// These two must be commented out after compiling:
+		protected System.Web.UI.WebControls.Calendar myCalendar;
+		protected System.Web.UI.WebControls.Label lblDates;
+
+		private void Page_Load(object sender, System.EventArgs e) {
 		}
 		
 		#region Web Form Designer generated code
@@ -36,12 +42,14 @@ namespace AutoTaskManager
 		/// </summary>
 		private void InitializeComponent()
 		{
+			// Stylistic changes to the Calender:
 			lblDates.Font.Size = 20;
 			myCalendar.Font.Size = 40;
 			myCalendar.TitleStyle.BackColor = Color.LightGray;
 			myCalendar.TitleStyle.ForeColor = Color.White;
 			myCalendar.DayHeaderStyle.BackColor = Color.FromArgb(210,230,255);
 			myCalendar.ShowGridLines = true;
+
 			myCalendar.SelectionChanged += new System.EventHandler(this.MyCalendar_SelectionChanged);
 			Load += new System.EventHandler(this.Page_Load);
 		}
@@ -57,5 +65,7 @@ namespace AutoTaskManager
 			}
 		}
 	}
+
 }
 
+#endif
