@@ -1,0 +1,18 @@
+﻿Build started 9/21/2014 3:04:25 PM.
+     1>Project "C:\Users\Justin\Documents\Visual Studio 2012\Projects\ConsoleApplication2\ConsoleApplication2\ConsoleApplication2.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /IC:\Users\Justin\Desktop\tesseract\tesseract\include /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _CRT_SECURE_NO_WARNINGS /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Debug\ConsoleApplication2.pch" /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt ConsoleApplication2.cpp
+         ConsoleApplication2.cpp
+     1>c:\users\justin\desktop\tesseract\tesseract\include\leptonica\environ.h(277): warning C4005: 'snprintf' : macro redefinition
+                 c:\users\justin\desktop\tesseract\tesseract\include\tesseract\platform.h(33) : see previous definition of 'snprintf'
+     1>c:\users\justin\desktop\tesseract\tesseract\include\leptonica\pix.h(169): warning C4305: 'initializing' : truncation from 'double' to 'const l_float32'
+     1>c:\users\justin\desktop\tesseract\tesseract\include\leptonica\pix.h(171): warning C4305: 'initializing' : truncation from 'double' to 'const l_float32'
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Justin\Documents\Visual Studio 2012\Projects\ConsoleApplication2\Debug\ConsoleApplication2.exe" /INCREMENTAL /NOLOGO /LIBPATH:C:\Users\Justin\Desktop\tesseract\tesseract\lib liblept168.lib liblept168d.lib libtesseract302.lib libtesseract302d.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Justin\Documents\Visual Studio 2012\Projects\ConsoleApplication2\Debug\ConsoleApplication2.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Justin\Documents\Visual Studio 2012\Projects\ConsoleApplication2\Debug\ConsoleApplication2.lib" /MACHINE:X86 Debug\ConsoleApplication2.obj
+         Debug\stdafx.obj
+         ConsoleApplication2.vcxproj -> C:\Users\Justin\Documents\Visual Studio 2012\Projects\ConsoleApplication2\Debug\ConsoleApplication2.exe
+     1>Done Building Project "C:\Users\Justin\Documents\Visual Studio 2012\Projects\ConsoleApplication2\ConsoleApplication2\ConsoleApplication2.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.91
