@@ -17,21 +17,14 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Web.UI.HtmlControls;
 
-namespace AutoTaskManager
-{
-	/// <summary>
-	/// Description of MainForm.
-	/// </summary>
-	public class Default : Page
-	{	
+namespace AutoTaskManager {
+	public partial class Default : Page {	
 
 		//<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 		#region Data
 
 		protected	HtmlInputButton		_Button_AddTask;
 		protected	HtmlInputText 		_Input_Tasks;
-		protected 	PlaceHolder			place;
-		protected	System.Web.UI.WebControls.Calendar MyCalendar;
 
 		#endregion
 		//<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
@@ -51,12 +44,6 @@ namespace AutoTaskManager
 		#region Page Load
 		private void Page_Load(object sender, EventArgs e)
 		{
-			MyCalendar.Font.Size = 40;
-			place = (PlaceHolder)LoadControl("~/Default.aspx");
-			Label txtLabel_1 = new Label(); //Generating a label
-			txtLabel_1.Text = "YAY!";
-            txtLabel_1.Style.Add("Color", "Red");
-			place.Controls.Add(txtLabel_1);
 			//------------------------------------------------------------------
 			if(IsPostBack)
 			{
